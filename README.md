@@ -11,19 +11,49 @@
 * [License](#license)
 
 ## General Information
+'Ebuss' has captured a huge market share in many fields, and it sells the products in various categories such as household essentials, books, personal care products, medicines, cosmetic items, beauty products, electrical appliances, kitchen and dining products and health care products. With the advancement in technology, it is imperative for Ebuss to grow quickly in the e-commerce market to become a major leader in the market because it has to compete with the likes of Amazon, Flipkart, etc., which are already market leaders.
 
 #### Objective
+As a Senior ML Engineer, you are tasked with building a model that will improve the recommendations given to the users given their past reviews and ratings.
 
 ## Approach
 
 Following is the step-by-step approach followed to solve the given problem statement:
+1. Data Understanding
+1. Data Cleaning
+1. Text Preprocessing
+1. Exploratory Data Analysis
+1. Feature Extraction
+1. Sentiment Model Building
+  - Logistic Regression
+  - Random Forest
+  - XGBoost
+  - Naive Bayes
+  - Hypertuned Random Forest
+  - Hypertuned XGBoost  
+1. Sentiment Model Inference
+1. Recommendation System Building
+  - User-based recommendation
+  - Item-based recommendation
+1. Recommendation System Inference
 
 ## Conclusions
 
+## Deployment
+
 ## Technologies Used
-- Python (ver 3.12.7)
-- Pandas (ver 2.2.2)
-- Spacy (ver 3.8.4)
+- python (ver 3.12.7)
+- numpy (ver 1.26.4)
+- pandas (ver 2.2.2)
+- matplotlib (ver 3.9.2)
+- seaborn (ver 0.13.2)
+- wordcloud (ver 1.9.4)
+- nltk (ver 3.9.1)
+- sklearn (ver 1.5.1)
+- xgb (ver 2.1.3)
+- swifter (ver 1.4.0)
+- pickle (ver 4.0)
+- spacy (ver 1.4.0)
 
 ## Acknowledgements
 

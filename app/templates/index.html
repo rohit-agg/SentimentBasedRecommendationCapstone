@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sentiment-based Recommendation System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <main class="container">
+    <h1>{{ title }}</h1>
+    <p class="subtitle">Enter a username and submit.</p>
+
+    <form method="post" action="/">
+      <label for="username">Username</label>
+      <input id="username" name="username" type="text" value="{{ username or '' }}" placeholder="joshua" autocomplete="off" />
+      <button type="submit">Submit</button>
+    </form>
+
+    {% if error %}
+      <div class="error" role="alert">{{ error }}</div>
+    {% endif %}
+
+    <div class="card-sep"></div>
+
+    {% if rows %}
+      <div class="caption">Results for <strong>{{ username }}</strong>:</div>
+      <table>
+        <thead>
+          <tr>
+            {% for key in rows[0].keys() %}
+              <th>{{ key }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in rows %}
+          <tr>
+            {% for val in row.values() %}
+              <td>{{ val }}</td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+  </main>
+  </body>
+</html>
