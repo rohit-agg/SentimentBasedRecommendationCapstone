@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sentiment-based Recommendation System</title>
+    <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
   </head>
   <body>
@@ -11,7 +11,7 @@
 
     <form method="post" action="/">
       <label for="username">Username</label>
-      <input id="username" name="username" type="text" value="{{ username or '' }}" placeholder="joshua" autocomplete="off" />
+      <input id="username" name="username" type="text" value="{{ form_data.username or '' }}" placeholder="joshua" autocomplete="off" />
       <button type="submit">Submit</button>
     </form>
 
@@ -21,22 +21,18 @@
 
     <div class="card-sep"></div>
 
-    {% if rows %}
-      <div class="caption">Results for <strong>{{ username }}</strong>:</div>
+    {% if top_products %}
+      <div class="caption">Results for <strong>{{ form_data.username }}</strong>:</div>
       <table>
         <thead>
           <tr>
-            {% for key in rows[0].keys() %}
-              <th>{{ key }}</th>
-            {% endfor %}
+            <th>Product</th>
           </tr>
         </thead>
         <tbody>
-          {% for row in rows %}
+          {% for product in top_products %}
           <tr>
-            {% for val in row.values() %}
-              <td>{{ val }}</td>
-            {% endfor %}
+            <td>{{ product }}</td>
           </tr>
           {% endfor %}
         </tbody>
