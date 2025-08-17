@@ -40,6 +40,12 @@ Following is the step-by-step approach followed to solve the given problem state
 
 ## Deployment
 
+- Install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#install-the-heroku-cli)
+- Confirm Heroku has been installed correctly by running `heroku --version`
+- Login into Heroku CLI with `heroku login`
+- Create a new app with `heroku create capstone-sentiment-recommendation`
+- Deploy to Heroku using the main branch `git push heroku main`
+
 ## Technologies Used
 - python (ver 3.12.7)
 - numpy (ver 1.26.4)
