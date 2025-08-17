@@ -36,8 +36,7 @@ Following is the step-by-step approach followed to solve the given problem state
   - User-based recommendation
   - Item-based recommendation
 9. Recommendation System Inference
-
-## Conclusions
+10. User-based fine-tuned Recommendations
 
 ## Deployment
 
