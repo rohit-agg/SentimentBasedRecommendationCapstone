@@ -1,9 +1,14 @@
 import pandas as pd
 import pickle as pk
 import re, string
+import nltk
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 from paths import DATASETS_DIR, OUTPUTS_DIR
+
+nltk.download('wordnet')
+nltk.download('punkt')
+nltk.download('punkt_tab')
 
 class Model:
   def __init__(self):
