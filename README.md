@@ -45,6 +45,9 @@ Following is the step-by-step approach followed to solve the given problem state
 - Login into Heroku CLI with `heroku login`
 - Create a new app with `heroku create capstone-sentiment-recommendation`
 - Deploy to Heroku using the main branch `git push heroku main`
+- Restrict app scaling by running `heroku ps:scale web=1`
+- Open the app on browser by running `heroku open`
+- Check the logs to see activity by running `heroku logs --tail`
 
 ## Technologies Used
 - python (ver 3.12.7)
