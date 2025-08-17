@@ -20,22 +20,22 @@ As a Senior ML Engineer, you are tasked with building a model that will improve 
 
 Following is the step-by-step approach followed to solve the given problem statement:
 1. Data Understanding
-1. Data Cleaning
-1. Text Preprocessing
-1. Exploratory Data Analysis
-1. Feature Extraction
-1. Sentiment Model Building
+2. Data Cleaning
+3. Text Preprocessing
+4. Exploratory Data Analysis
+5. Feature Extraction
+6. Sentiment Model Building
   - Logistic Regression
   - Random Forest
   - XGBoost
   - Naive Bayes
   - Hypertuned Random Forest
   - Hypertuned XGBoost  
-1. Sentiment Model Inference
-1. Recommendation System Building
+7. Sentiment Model Inference
+8. Recommendation System Building
   - User-based recommendation
   - Item-based recommendation
-1. Recommendation System Inference
+9. Recommendation System Inference
 
 ## Conclusions
 
