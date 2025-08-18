@@ -4,9 +4,8 @@
 ## Table of Contents
 * [General Information](#general-information)
 * [Approach](#approach)
-* [Conclusions](#conclusions)
+* [Deployment](#deployment)
 * [Technologies Used](#technologies-used)
-* [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
 * [License](#license)
 
@@ -49,6 +48,8 @@ Following is the step-by-step approach followed to solve the given problem state
 - Restrict app scaling by running `heroku ps:scale web=1`
 - Open the app on browser by running `heroku open`
 - Check the logs to see activity by running `heroku logs --tail`
+
+Try out the deployed app at [https://iiitb-capstone-sbprs-d98acacaf128.herokuapp.com/](https://iiitb-capstone-sbprs-d98acacaf128.herokuapp.com/)
 
 ## Technologies Used
 - python (ver 3.12.7)
