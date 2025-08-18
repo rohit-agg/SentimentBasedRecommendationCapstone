@@ -33,10 +33,11 @@ Following is the step-by-step approach followed to solve the given problem state
   - Hypertuned XGBoost  
 7. Sentiment Model Inference
 8. Recommendation System Building
-  - User-based recommendation
-  - Item-based recommendation
+  - User-User recommendation
+  - Item-Item recommendation
 9. Recommendation System Inference
 10. User-based fine-tuned Recommendations
+11. Deployment
 
 ## Deployment
 
@@ -62,8 +63,6 @@ Following is the step-by-step approach followed to solve the given problem state
 - swifter (ver 1.4.0)
 - pickle (ver 4.0)
 - spacy (ver 1.4.0)
-
-## Acknowledgements
 
 ## Contact
 Created by [@rohit-agg](https://github.com/rohit-agg) - feel free to contact me!

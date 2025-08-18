@@ -3,16 +3,18 @@
   <head>
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
   </head>
   <body>
     <main class="container">
     <h1>{{ title }}</h1>
     <p class="subtitle">Enter a username and submit.</p>
 
-    <form method="post" action="/">
+    <form id="recommendForm" method="post" action="/">
       <label for="username">Username</label>
       <input id="username" name="username" type="text" value="{{ form_data.username or '' }}" placeholder="joshua" autocomplete="off" />
-      <button type="submit">Submit</button>
+      <button type="submit" id="submitBtn">Submit</button>
+      <div class="spinner" id="spinner"></div>
     </form>
 
     {% if error %}
